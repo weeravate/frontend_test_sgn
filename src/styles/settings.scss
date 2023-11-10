@@ -1,0 +1,170 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+// @use 'vuetify/settings' with (
+//   $color-pack: false
+// );
+
+body {
+  color: rgb(75, 75, 75);
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.header-subtitle {
+  font-size: 20px;
+}
+
+.region-title {
+  font-weight: 600;
+}
+
+.region-item {
+  display: flex;
+}
+
+.region-color {
+  width: 17px;
+  height: 17px;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.region-blue {
+  background: #6047ec;
+}
+.region-purple {
+  background: #a66de6;
+}
+.region-pink {
+  background: #b7658c;
+}
+.region-orange {
+  background: #db7c30;
+}
+.region-yellow {
+  background: #fecc3e;
+}
+
+.graph-layout {
+  position: relative;
+  width: 90vw;
+}
+
+.range-container {
+  position: relative;
+}
+.graph-populate-range {
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+  margin-bottom: 5px;
+}
+.graph-populate-range-value {
+  text-align: center;
+}
+.vertical-line {
+  height: 390px;
+  width: 1px;
+  background: rgb(150, 150, 150);
+}
+.line-plus {
+  margin-left: 50px;
+}
+
+.country-container {
+  position: absolute;
+  top: 24px;
+  left: 0px;
+}
+.graph-country-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.graph-country-text {
+  width: 180px;
+  text-align: right;
+  margin-right: 20px;
+}
+.graph-country-color {
+  position: relative;
+  height: 28px;
+  border-radius: 2px;
+  transition: .5s;
+}
+.img-flag {
+  position: absolute;
+  right: 0px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 1px;
+  margin-right: 3px;
+}
+.graph-country-populate {
+  margin-left: 20px;
+}
+
+.graph-country-slider {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  width: 50vw;
+}
+.graph-country-button {
+  margin-right: 20px;
+}
+.graph-slider {
+  margin-top: 7px;
+}
+
+.current-year-layout {
+  position: absolute;
+  left: 40vw;
+  bottom: 0px;
+  text-align: right;
+  color: rgb(100, 100, 100);
+  width: 280px;
+}
+.current-year {
+  font-size: 50px;
+}
+.current-populate {
+  font-size: 30px;
+}
+
+.apexcharts-toolbar {
+  display: none !important;
+}
+.apx-legend-position-bottom {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .graph-country-slider {
+    width: 62vw;
+  }
+  .graph-populate-range-value {
+    margin-left: 50px;
+    text-align: center;
+  }
+  .range-plus {
+    margin-left: 20px;
+  }
+  .vertical-line {
+    height: 390px;
+    width: 1px;
+    background: rgb(150, 150, 150);
+  }
+  .line-plus {
+    margin-left: 50px;
+  }
+}
